@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>慢食伴侣 (Slow Food Companion) - 智能细嚼慢咽助手 | 减脂与肠胃健康管理</title>
+    <meta name="description" content="慢食伴侣是一款专为改善进食习惯设计的智能应用。辅助细嚼慢咽，通过Bite-Chew-Rest三阶段引导，像吃饭节拍器一样帮您管理进食节奏，改善消化并辅助体重管理。">
+    <meta name="keywords" content="慢食伴侣, 细嚼慢咽, 慢吞吞, 减肥App, 肠胃健康, 细嚼慢咽工具, Eating Slowly, 进食节奏">
+
+    <!-- AI SEO Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://yourdomain.com/#software",
+          "name": "慢食伴侣",
+          "alternateName": "Slow Food Companion",
+          "operatingSystem": "iOS, Android, WatchOS",
+          "applicationCategory": "HealthApplication",
+          "description": "慢食伴侣是一款智能慢食引导工具。它将用餐拆解为“进食-咀嚼-休息”三阶段循环，利用视觉、音效和触觉反馈，训练肌肉记忆，帮您自然养成细嚼慢咽的习惯。",
+          "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "priceCurrency": "CNY",
+            "availability": "https://schema.org/InStock"
+          },
+          "featureList": [
+            "独创三阶段循环引导 (进食-咀嚼-放松)",
+            "多感官引导 (蓝环脉动视觉 + 节奏震动 + 舒缓音效)",
+            "Apple Watch 无缝协同 (手腕震动引导，无需亮屏)",
+            "高隐私保护 (摄像头本地识别数据不上传)"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://yourdomain.com/#organization",
+          "name": "慢食伴侣项目组",
+          "url": "https://yourdomain.com",
+          "logo": "https://yourdomain.com/static/logo.png"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "什么是慢食伴侣？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "慢食伴侣是一款专注于“细嚼慢咽”习惯养成的健康应用。它像节拍器一样设定进食节奏，引导用户每口咀嚼20次以上，缓解吃太快导致的消化不良，让大脑有足够时间收到“饱腹感”信号，辅助减肥。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "慢食伴侣如何工作？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "应用将进食过程分为：Bite (放入口中)、Chew (专注咀嚼)、Rest (吞咽休息)。通过手机或手表的视觉/触觉震动提醒，用户只需跟着节奏操作，无需复杂记录每餐卡路里。"
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- UI/UX Styling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00D9A3;
+            --secondary: #1DE5AC;
+            --accent: #5271FF;
+            --dark: #121212;
+            --light: #F8FAFC;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', 'PingFang SC', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+        header {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 64px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--dark), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 24px;
+            letter-spacing: -2px;
+        }
+
+        .hero-subtitle {
+            font-size: 24px;
+            color: #64748B;
+            margin-bottom: 48px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 40px;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.1);
+            margin-bottom: 80px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-bottom: 100px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px;
+            border-radius: 32px;
+            border: 1px solid #E2E8F0;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover { transform: translateY(-10px); }
+
+        .feature-card h3 {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: var(--accent);
+        }
+
+        .feature-card p { color: #64748B; }
+
+        .faq-section {
+            background: white;
+            padding: 80px 40px;
+            border-radius: 48px;
+            margin-bottom: 100px;
+        }
+
+        .faq-title { font-size: 32px; font-weight: 700; margin-bottom: 48px; text-align: center; }
+
+        .faq-item { margin-bottom: 32px; }
+        .faq-item h4 { font-size: 20px; font-weight: 600; margin-bottom: 12px; color: var(--dark); }
+        .faq-item p { color: #64748B; }
+
+        .cta-section {
+            text-align: center;
+            padding: 100px 0;
+            background: var(--dark);
+            color: white;
+            border-radius: 60px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 18px 48px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 217, 163, 0.3);
+            margin: 20px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: var(--secondary);
+        }
+
+        footer { text-align: center; padding: 40px 0; color: #94A3B8; font-size: 14px; }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 44px; }
+            .hero-subtitle { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div style="background: var(--primary); width: 60px; height: 60px; border-radius: 16px; margin: 0 auto 32px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 24px;">伴</div>
+            <h1 class="hero-title">慢食伴侣</h1>
+            <p class="hero-subtitle">智能细嚼慢咽引导工具，像给“干饭人”装个节拍器，通过三阶段循环帮你养成健康进食好习惯。</p>
+            
+            <img src="slow_food_hero_concept_1773997431280.png" alt="慢食伴侣 App 界面展示" class="hero-image">
+            
+            <div class="actions">
+                <a href="https://apps.apple.com/cn/app/id6477158301" class="btn">App Store 下载</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="feature-grid">
+                <div class="feature-card">
+                    <h3>三阶段引导模式</h3>
+                    <p>将用餐拆解为“进食-咀嚼-休息”科学循环。蓝环脉动引导咀嚼节奏，橙环提示放下餐具体会饱腹感，训练肌肉记忆。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>多感官节奏反馈</h3>
+                    <p>视觉脉动、舒缓音效引导以及手机/手表震动回馈，让您在无需注视屏幕的情况下精准把控进食节奏。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Apple Watch 支持</h3>
+                    <p>手腕震动比手机提醒更私密、无感。通过手表独立模式，您可以在任何场合悄悄优雅地完成慢食修筑。</p>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2 class="faq-title">常见问题解答 (FAQ)</h2>
+                <div class="faq-item">
+                    <h4>慢食伴侣真的能帮我减肥吗？</h4>
+                    <p>是的。大脑通常需要20分钟才能接收到“我饱了”的信号。通过慢食伴侣引导延长用餐时间，可以让信号及时送达，自然减少每餐摄入量，且无需痛苦节食。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>会不会使用起来很繁琐？</h4>
+                    <p>我们的设计初衷是“无感干预”。您不需要像其他应用那样输入每顿饭吃了几克碳水，只需要跟着震动节奏咀嚼。上手即用，阻力极低。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>它和传统的倒计时App有什么区别？</h4>
+                    <p>传统App只管时间到了没。慢食伴侣拥有专为用餐优化的“Bite-Chew-Rest”动态相位模型，并针对锁屏保活与手表联动进行了深度技术优化。</p>
+                </div>
+            </section>
+        </main>
+
+        <section class="cta-section">
+            <h2>开启您的正念饮食之旅</h2>
+            <p style="margin-top: 16px; opacity: 0.8;">让进食回归享受，让肠胃告别负担。</p>
+            <a href="#" class="btn" style="background: white; color: var(--dark); box-shadow: none;">了解 Pro 会员</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 慢食伴侣 (Slow Food Companion). All Rights Reserved.</p>
+            <p>健康生活，从咬碎这一口开始。</p>
+        </footer>
+    </div>
+
+</body>
+</html>
