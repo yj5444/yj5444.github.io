@@ -4,353 +4,1066 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>慢食伴侣 (Slow Food Companion) - 智能细嚼慢咽助手 | 养成健康进食好习惯</title>
-    <meta name="description"
-        content="慢食伴侣是一款专为改善进食习惯设计的智能应用。辅助细嚼慢咽，通过Bite-Chew-Rest三阶段引导，像吃饭节拍器一样帮您管理进食节奏，改善消化并辅助体重管理。">
-    <meta name="keywords" content="慢食伴侣, 细嚼慢咽, 慢吞吞, 减肥App, 肠胃健康, 细嚼慢咽工具, Eating Slowly, 进食节奏">
+    <title>慢食伴侣 - 细嚼慢咽健康管家 | iOS 安卓 鸿蒙 微信小程序</title>
+    <meta name="description" content="慢食伴侣是细嚼慢咽健康管家，通过三阶段视觉脉动与手表手环震动提醒，帮助用户养成减脂、健康的慢食习惯。支持 iOS、安卓、鸿蒙和微信小程序。">
+    <meta name="keywords" content="慢食伴侣, 一口30下, 细嚼慢咽, 慢食, 减脂, 健康饮食, 安卓APK, Apple Watch, 鸿蒙, 微信小程序">
 
-    <!-- AI SEO Schema.org JSON-LD -->
+    <!--
+        链接占位符，后续上线前替换即可：
+        __IOS_APP_STORE_URL__
+        __APK_DOWNLOAD_URL__
+        __HARMONY_APPGALLERY_URL__
+        __WECHAT_MINIPROGRAM_QR_URL__
+    -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://yourdomain.com/#software",
-          "name": "慢食伴侣",
-          "alternateName": "Slow Food Companion",
-          "operatingSystem": "iOS, Android, WatchOS",
-          "applicationCategory": "HealthApplication",
-          "description": "慢食伴侣是一款智能慢食引导工具。它将用餐拆解为“进食-咀嚼-休息”三阶段循环，利用视觉、音效和触觉反馈，训练肌肉记忆，帮您自然养成细嚼慢咽的习惯。",
-          "offers": {
-            "@type": "Offer",
-            "price": "0.00",
-            "priceCurrency": "CNY",
-            "availability": "https://schema.org/InStock"
-          },
-          "featureList": [
-            "独创三阶段循环引导 (进食-咀嚼-放松)",
-            "多感官引导 (蓝环脉动视觉 + 节奏震动 + 舒缓音效)",
-            "Apple Watch 无缝协同 (手腕震动引导，无需亮屏)",
-            "数据统计与习惯追踪 (记录用餐时间、咀嚼次数)"
-          ]
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://yourdomain.com/#organization",
-          "name": "慢食伴侣项目组",
-          "url": "https://yourdomain.com",
-          "sameAs": [
-            "https://apps.apple.com/cn/app/id6757735722"
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
+        "@context": "https://schema.org",
+        "@graph": [
             {
-              "@type": "Question",
-              "name": "什么是慢食伴侣？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "慢食伴侣是一款专注于“细嚼慢咽”习惯养成的健康应用。它通过‘Chewing-享受滋味-暂停呼吸’的三阶段视觉引导和震动反馈，像吃饭节拍器一样设定进食节奏，帮助用户养成细嚼慢咽的习惯。"
-              }
+                "@type": "SoftwareApplication",
+                "@id": "https://chewing.top/#software",
+                "name": "慢食伴侣",
+                "alternateName": "一口30下",
+                "operatingSystem": "iOS, Android, HarmonyOS, WeChat Mini Program",
+                "applicationCategory": "HealthApplication",
+                "description": "慢食伴侣是一款细嚼慢咽健康管家，将用餐拆解为放入口中、专注咀嚼、吞咽休息三个相位，通过视觉脉动、震动反馈和数据记录帮助用户养成慢食习惯。",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "CNY",
+                    "availability": "https://schema.org/InStock"
+                },
+                "featureList": [
+                    "三阶段感官引导",
+                    "Apple Watch 与手表手环震动协同",
+                    "多维用餐数据记录与热图分析",
+                    "支持 iOS、安卓、鸿蒙、微信小程序"
+                ]
             },
             {
-              "@type": "Question",
-              "name": "细嚼慢咽对健康有何益处？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "细嚼慢咽可以让大脑及时收到“饱腹感”信号，从而自然控制食量。同时，充分咀嚼能够减轻胃肠道的消化负担，改善肠胃亚健康状态。"
-              }
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "慢食伴侣为什么是一款细嚼慢咽健康管家？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "慢食伴侣是您的细嚼慢咽健康管家，核心目标是帮助用户养成一口30下的细嚼慢咽习惯，改善进食节奏。它不仅适合需要控制体重的用户，也适合关注肠胃健康、纠正暴饮暴食行为、培养正念饮食习惯的人群。通过节奏提醒放慢进食速度，可以减少无意识加餐，减轻肠胃负担，帮助建立更稳定的健康饮食节奏。"
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "安卓和鸿蒙手机如何安装慢食伴侣？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "安卓、EMUI 与 HarmonyOS 4.3 及以下设备可下载官网 APK 安装；HarmonyOS 5 及以上原生鸿蒙设备请使用华为应用市场原生鸿蒙版或微信小程序。"
+                        }
+                    }
+                ]
             }
-          ]
-        }
-      ]
+        ]
     }
     </script>
 
-    <!-- UI/UX Styling -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@400;700&display=swap"
-        rel="stylesheet">
     <style>
         :root {
-            --primary: #55D0A1;
-            /* 慢食伴侣绿色 */
-            --blue: #4489FF;
-            /* 咀嚼状态蓝色 */
-            --orange: #FFA012;
-            /* 暂停状态橙色 */
-            --dark: #1F2937;
-            --light: #F9FAFB;
+            --mint: #35c98b;
+            --mint-deep: #149166;
+            --blue: #317df0;
+            --orange: #f39a24;
+            --ink: #17231f;
+            --muted: #66736f;
+            --line: #dfe8e3;
+            --paper: #fbfdfb;
+            --soft: #eef8f3;
+            --white: #ffffff;
+            --warning: #fff5e6;
+            --shadow: 0 22px 60px rgba(23, 35, 31, 0.1);
         }
 
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Inter', 'PingFang SC', -apple-system, sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
-            line-height: 1.6;
+            margin: 0;
+            font-family: "HarmonyOS Sans SC", "MiSans", "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--ink);
+            background:
+                linear-gradient(90deg, rgba(20, 145, 102, 0.05) 1px, transparent 1px),
+                linear-gradient(180deg, rgba(20, 145, 102, 0.05) 1px, transparent 1px),
+                var(--paper);
+            background-size: 32px 32px;
+            line-height: 1.7;
         }
 
-        .container {
-            max-width: 1100px;
+        a {
+            color: inherit;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        .site-shell {
+            width: min(1160px, calc(100% - 40px));
             margin: 0 auto;
-            padding: 0 24px;
         }
 
-        header {
-            padding: 60px 0 40px;
-            text-align: center;
-        }
-
-        .hero-title {
-            font-family: 'Outfit', sans-serif;
-            font-size: 56px;
-            font-weight: 800;
-            color: var(--dark);
-            margin-bottom: 16px;
-            letter-spacing: -1.5px;
-        }
-
-        .hero-subtitle {
-            font-size: 22px;
-            color: #6B7280;
-            margin-bottom: 60px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* App Mockups Layout */
-        .app-showcase {
+        .topbar {
             display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            gap: 24px;
-            margin-bottom: 80px;
-            perspective: 1000px;
-            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
         }
 
-        .phone-mockup {
-            width: 280px;
-            background: white;
-            border-radius: 40px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            border: 8px solid #F3F4F6;
-            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            margin-bottom: 20px;
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            text-decoration: none;
         }
 
-        .phone-mockup:nth-child(2) {
-            transform: translateY(-40px) scale(1.1);
-            z-index: 10;
-            border-color: #E5E7EB;
-        }
-
-        .phone-mockup:hover {
-            transform: translateY(-10px) scale(1.05);
-        }
-
-        .phone-mockup img {
-            width: 100%;
+        .brand-mark {
             display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            object-fit: cover;
         }
 
-        .label {
-            text-align: center;
-            padding: 12px;
-            font-weight: 700;
-            color: white;
+        .nav-links {
+            display: flex;
+            gap: 22px;
+            color: var(--muted);
             font-size: 14px;
         }
 
-        .label.green {
-            background: var(--primary);
-        }
-
-        .label.blue {
-            background: var(--blue);
-        }
-
-        .label.orange {
-            background: var(--orange);
-        }
-
-        .feature-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            padding: 80px 0;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 40px;
-            border-radius: 32px;
-            border: 1px solid #E5E7EB;
-        }
-
-        .feature-card h3 {
-            font-size: 24px;
-            margin-bottom: 16px;
-            color: var(--dark);
-            font-weight: 800;
-        }
-
-        .feature-card p {
-            color: #6B7280;
-            font-size: 17px;
-        }
-
-        .faq-section {
-            background: white;
-            padding: 80px 40px;
-            border-radius: 40px;
-            margin-bottom: 80px;
-        }
-
-        .faq-title {
-            text-align: center;
-            font-size: 32px;
-            font-weight: 800;
-            margin-bottom: 48px;
-        }
-
-        .faq-item {
-            margin-bottom: 32px;
-        }
-
-        .faq-item h4 {
-            font-size: 20px;
-            margin-bottom: 8px;
-            color: var(--dark);
-            font-weight: 700;
-        }
-
-        .faq-item p {
-            color: #6B7280;
-            font-size: 16px;
-        }
-
-        .button-group {
-            text-align: center;
-            margin-bottom: 100px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--dark);
-            color: white;
-            padding: 18px 48px;
-            border-radius: 50px;
-            font-weight: 700;
+        .nav-links a {
             text-decoration: none;
-            transition: all 0.2s ease;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            font-size: 18px;
         }
 
-        .btn:hover {
-            background: #374151;
+        .nav-links a:hover {
+            color: var(--mint-deep);
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+            align-items: center;
+            gap: 48px;
+            min-height: calc(100vh - 92px);
+            padding: 34px 0 72px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 7px 12px;
+            border: 1px solid rgba(53, 201, 139, 0.35);
+            border-radius: 999px;
+            color: var(--mint-deep);
+            background: rgba(53, 201, 139, 0.08);
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 999px;
+            background: var(--mint);
+            box-shadow: 0 0 0 6px rgba(53, 201, 139, 0.16);
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            margin-top: 0;
+        }
+
+        h1 {
+            margin-bottom: 18px;
+            font-size: clamp(48px, 8vw, 92px);
+            line-height: 1.02;
+            letter-spacing: 0;
+        }
+
+        .hero-copy {
+            margin: 22px 0 0;
+            color: var(--muted);
+            font-size: clamp(19px, 2.1vw, 25px);
+            max-width: 650px;
+        }
+
+        .cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px;
+            margin: 34px 0 22px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 50px;
+            padding: 14px 22px;
+            border: 1px solid transparent;
+            border-radius: 999px;
+            font-weight: 800;
+            text-decoration: none;
+            transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+        }
+
+        .button:hover {
             transform: translateY(-2px);
         }
 
-        footer {
-            text-align: center;
-            padding: 60px 0;
-            border-top: 1px solid #E5E7EB;
-            color: #9CA3AF;
+        .button-primary {
+            color: var(--white);
+            background: var(--ink);
+            box-shadow: 0 16px 32px rgba(23, 35, 31, 0.18);
         }
 
-        @media (max-width: 600px) {
-            .hero-title {
-                font-size: 40px;
+        .button-primary:hover {
+            background: #0f1815;
+        }
+
+        .button-secondary {
+            border-color: var(--line);
+            color: var(--ink);
+            background: rgba(255, 255, 255, 0.72);
+        }
+
+        .platforms {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .platforms span {
+            padding: 7px 11px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .showcase {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            align-items: end;
+            gap: 18px;
+            min-width: 0;
+        }
+
+        .phone {
+            overflow: hidden;
+            border: 8px solid #f4f7f5;
+            border-radius: 28px;
+            background: var(--white);
+            box-shadow: var(--shadow);
+            transform: translateY(18px);
+        }
+
+        .phone:nth-child(2) {
+            transform: translateY(-20px);
+        }
+
+        .phone:nth-child(3) {
+            transform: translateY(32px);
+        }
+
+        .phone img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .phase-label {
+            padding: 12px 10px;
+            color: var(--white);
+            text-align: center;
+            font-size: 13px;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        .phase-green {
+            background: var(--mint);
+        }
+
+        .phase-blue {
+            background: var(--blue);
+        }
+
+        .phase-orange {
+            background: var(--orange);
+        }
+
+        section {
+            padding: 84px 0;
+        }
+
+        .section-head {
+            display: grid;
+            grid-template-columns: minmax(0, 0.72fr) minmax(260px, 0.28fr);
+            align-items: end;
+            gap: 30px;
+            margin-bottom: 28px;
+        }
+
+        .section-kicker {
+            margin-bottom: 10px;
+            color: var(--mint-deep);
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        h2 {
+            margin-bottom: 0;
+            font-size: clamp(30px, 4.4vw, 52px);
+            line-height: 1.12;
+            letter-spacing: 0;
+        }
+
+        .section-note {
+            margin: 0;
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .card {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.86);
+            box-shadow: 0 12px 36px rgba(23, 35, 31, 0.06);
+        }
+
+        .feature-card {
+            min-height: 300px;
+            padding: 24px;
+        }
+
+        .feature-icon {
+            display: inline-grid;
+            width: 44px;
+            height: 44px;
+            place-items: center;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            color: var(--white);
+            font-size: 22px;
+            font-weight: 900;
+        }
+
+        .icon-green {
+            background: var(--mint);
+        }
+
+        .icon-blue {
+            background: var(--blue);
+        }
+
+        .icon-orange {
+            background: var(--orange);
+        }
+
+        .icon-ink {
+            background: var(--ink);
+        }
+
+        .feature-card h3,
+        .download-card h3,
+        .faq-item h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+            line-height: 1.25;
+        }
+
+        .feature-card p,
+        .download-card p,
+        .faq-item p,
+        .mini-list {
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+        .mini-list {
+            margin: 12px 0 0;
+            padding-left: 18px;
+        }
+
+        .download-section {
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.54);
+        }
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .download-card {
+            display: flex;
+            flex-direction: column;
+            padding: 26px;
+        }
+
+        .download-card.featured {
+            border-color: rgba(53, 201, 139, 0.5);
+            background: linear-gradient(180deg, rgba(238, 248, 243, 0.96), rgba(255, 255, 255, 0.92));
+        }
+
+        .download-card.wide {
+            grid-column: auto;
+        }
+
+        .download-topline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            min-height: 28px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            color: var(--mint-deep);
+            background: rgba(53, 201, 139, 0.12);
+            font-size: 13px;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .download-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        details {
+            margin-top: 18px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--white);
+        }
+
+        details[open] {
+            box-shadow: 0 12px 30px rgba(23, 35, 31, 0.06);
+        }
+
+        summary {
+            cursor: pointer;
+            padding: 15px 16px;
+            color: var(--ink);
+            font-weight: 800;
+            list-style: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: "+";
+            float: right;
+            color: var(--mint-deep);
+            font-weight: 900;
+        }
+
+        details[open] summary::after {
+            content: "-";
+        }
+
+        .steps {
+            display: grid;
+            gap: 10px;
+            margin: 0;
+            padding: 0 16px 18px;
+            list-style: none;
+            counter-reset: step;
+        }
+
+        .steps li {
+            position: relative;
+            padding-left: 38px;
+            color: var(--muted);
+        }
+
+        .steps li::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-grid;
+            width: 26px;
+            height: 26px;
+            place-items: center;
+            border-radius: 8px;
+            color: var(--white);
+            background: var(--mint);
+            font-size: 13px;
+            font-weight: 900;
+        }
+
+        .safety {
+            margin-top: 16px;
+            padding: 14px 16px;
+            border: 1px solid rgba(243, 154, 36, 0.36);
+            border-radius: 8px;
+            color: #785213;
+            background: var(--warning);
+            font-size: 15px;
+        }
+
+        .platform-table {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .platform-cell {
+            padding: 16px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .platform-cell strong {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .platform-cell span {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .qr-block {
+            display: grid;
+            grid-template-columns: 116px minmax(0, 1fr);
+            gap: 16px;
+            align-items: center;
+            margin-top: 18px;
+        }
+
+        .qr-placeholder {
+            display: grid;
+            width: 116px;
+            height: 116px;
+            place-items: center;
+            border: 1px dashed #9bb2aa;
+            border-radius: 8px;
+            color: var(--muted);
+            background:
+                linear-gradient(90deg, rgba(23, 35, 31, 0.08) 1px, transparent 1px),
+                linear-gradient(180deg, rgba(23, 35, 31, 0.08) 1px, transparent 1px),
+                var(--white);
+            background-size: 12px 12px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .qr-stack {
+            display: grid;
+            gap: 10px;
+            justify-items: center;
+        }
+
+        .download-methods {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 22px;
+        }
+
+        .download-method {
+            padding: 20px;
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.82);
+        }
+
+        .download-method h4 {
+            margin: 0 0 8px;
+            font-size: 18px;
+        }
+
+        .download-method p {
+            margin: 0 0 16px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .qr-image-link {
+            display: block;
+            width: 132px;
+            height: 132px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            background: var(--white);
+            box-shadow: 0 10px 24px rgba(23, 35, 31, 0.08);
+        }
+
+        .qr-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: var(--white);
+        }
+
+        .qr-caption {
+            margin: 0;
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .compat-note {
+            margin-top: 18px;
+            padding: 16px;
+            border-radius: 8px;
+            background: rgba(49, 125, 240, 0.08);
+            color: #244a86;
+            font-size: 15px;
+        }
+
+        .faq-list {
+            display: grid;
+            gap: 14px;
+        }
+
+        .faq-item {
+            padding: 24px;
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 36px 0 46px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .footer strong {
+            color: var(--ink);
+        }
+
+        @media (max-width: 980px) {
+            .hero {
+                grid-template-columns: 1fr;
+                min-height: auto;
+                padding-top: 22px;
             }
 
-            .hero-subtitle {
-                font-size: 18px;
+            .showcase {
+                max-width: 720px;
+                margin: 0 auto;
             }
 
-            .phone-mockup:nth-child(2) {
-                transform: none;
+            .feature-grid,
+            .platform-table,
+            .download-methods {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
 
-            .phone-mockup {
+            .download-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .site-shell {
+                width: min(100% - 28px, 1160px);
+            }
+
+            .topbar {
+                align-items: flex-start;
+                padding: 16px 0 8px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                gap: 30px;
+                padding-bottom: 48px;
+            }
+
+            h1 {
+                font-size: 56px;
+            }
+
+            .hero-copy {
+                font-size: 19px;
+            }
+
+            .button {
                 width: 100%;
-                max-width: 320px;
+            }
+
+            .showcase {
+                display: flex;
+                gap: 12px;
+                overflow-x: auto;
+                padding: 4px 2px 24px;
+                scroll-snap-type: x mandatory;
+            }
+
+            .phone,
+            .phone:nth-child(2),
+            .phone:nth-child(3) {
+                flex: 0 0 72%;
+                transform: none;
+                scroll-snap-align: center;
+                border-radius: 24px;
+            }
+
+            section {
+                padding: 56px 0;
+            }
+
+            .section-head {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .feature-grid,
+            .platform-table,
+            .download-methods {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-card {
+                min-height: auto;
+            }
+
+            .download-topline {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .qr-block {
+                grid-template-columns: 1fr;
+            }
+
+            .footer {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .button {
+                transition: none;
+            }
+
+            .button:hover {
+                transform: none;
             }
         }
     </style>
 </head>
 
 <body>
+    <div class="site-shell">
+        <nav class="topbar" aria-label="主导航">
+            <a class="brand" href="#top" aria-label="慢食伴侣首页">
+                <img class="brand-mark" src="images/logo.png" alt="慢食伴侣官方 Logo">
+                <span>慢食伴侣</span>
+            </a>
+            <div class="nav-links" aria-label="页面导航">
+                <a href="#features">核心功能</a>
+                <a href="#download">平台下载</a>
+                <a href="#faq">FAQ</a>
+            </div>
+        </nav>
 
-    <div class="container">
-        <header>
-            <h1 class="hero-title">慢食伴侣</h1>
-            <p class="hero-subtitle">智能细嚼慢咽引导工具，像吃饭节拍器一样养成减脂好习惯。</p>
+        <header class="hero" id="top">
+            <div>
+    
+                <h1>慢食伴侣</h1>
+                <p class="hero-copy">一口30下，您的细嚼慢咽健康管家</p>
+
+                <div class="cta-row" aria-label="下载入口">
+                    <a class="button button-primary" href="#download">立即下载，开启细嚼慢咽</a>
+                </div>
+
+                <div class="platforms" aria-label="支持的平台">
+                    <span>iOS</span>
+                    <span>安卓 APK</span>
+                    <span>鸿蒙</span>
+                    <span>微信小程序</span>
+                </div>
+            </div>
+
+            <div class="showcase" aria-label="慢食伴侣三阶段界面截图">
+                <figure class="phone">
+                    <figcaption class="phase-label phase-green">放入口中</figcaption>
+                    <img src="images/screen_home.png" alt="慢食伴侣绿色阶段界面截图">
+                </figure>
+                <figure class="phone">
+                    <figcaption class="phase-label phase-blue">专注咀嚼</figcaption>
+                    <img src="images/screen_chewing.png" alt="慢食伴侣蓝色咀嚼阶段界面截图">
+                </figure>
+                <figure class="phone">
+                    <figcaption class="phase-label phase-orange">吞咽休息</figcaption>
+                    <img src="images/screen_paused.png" alt="慢食伴侣橙色休息阶段界面截图">
+                </figure>
+            </div>
         </header>
-
-        <section class="app-showcase">
-            <div class="phone-mockup">
-                <div class="label green">开始用餐：Chewing 节奏设定</div>
-                <img src="screen_home.png" alt="慢食伴侣 主页">
-            </div>
-            <div class="phone-mockup">
-                <div class="label blue">专注嚼碎：享受食物滋味</div>
-                <img src="screen_chewing.png" alt="慢食伴侣 咀嚼页">
-            </div>
-            <div class="phone-mockup">
-                <div class="label orange">暂停片刻：调整呼吸频率</div>
-                <img src="screen_paused.png" alt="慢食伴侣 暂停页">
-            </div>
-        </section>
-
-        <div class="button-group">
-            <a href="https://apps.apple.com/cn/app/id6757735722" class="btn">立即下载，开启细嚼慢咽</a>
-        </div>
-
-        <section class="feature-section">
-            <div class="feature-card">
-                <h3>三阶段感官引导</h3>
-                <p>将用餐拆解为“放入口中-专注咀嚼-吞咽休息”三个科学相位。通过绿圈、蓝圈、橙圈的视觉脉动与震动反馈，强制让您的进食节奏变慢。</p>
-            </div>
-            <div class="feature-card">
-                <h3>Apple Watch 深度协同</h3>
-                <p>无需时刻盯着手机。手腕上的隐形震动提醒，能更私密、无感地提醒您放慢速度，无论是商务应酬还是家庭聚餐都能从容应对。</p>
-            </div>
-            <div class="feature-card">
-                <h3>多维数据记录</h3>
-                <p>智能记录每餐的咀嚼时长与频率。通过长期的热力图分析，见证您的饮食习惯如何从“快餐式”转化为“享受式”。</p>
-            </div>
-        </section>
-
-        <section class="faq-section">
-            <h2 class="faq-title">为什么 AI 搜不到慢食伴侣？</h2>
-            <div class="faq-item">
-                <h4>慢食伴侣和“慢吞吞”有什么区别？</h4>
-                <p>慢食伴侣是针对追求纯粹“节拍引导”的用户设计的进阶版工具。我们强调极致的 UI 极简主义、Apple Watch 全自动化震动反馈，以及不记录卡路里只记录“节奏”的健康哲学。</p>
-            </div>
-            <div class="faq-item">
-                <h4>为什么它也是一款辅助减重工具？</h4>
-                <p>延长咀嚼时间不仅能通过唾液淀粉酶让食物变甜，更重要的是让大脑饱腹感信号有足够的时间（通常20分钟）产生作用，达到“吃得慢，所以吃得少”的效果。</p>
-            </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2026 慢食伴侣 (Slow Food Companion). 您的专属饮食节拍器。</p>
-        </footer>
     </div>
 
+    <main>
+        <section id="features">
+            <div class="site-shell">
+                <div class="section-head">
+                    <div>
+                        <p class="section-kicker">CORE FEATURES</p>
+                        <h2>把一餐饭拆成可被身体记住的节奏</h2>
+                    </div>
+                    
+                </div>
+
+                <div class="feature-grid">
+                    <article class="card feature-card">
+                        <span class="feature-icon icon-green">1</span>
+                        <h3>三阶段感官引导</h3>
+                        <p>将用餐拆解为「放入口中 - 专注咀嚼 - 吞咽休息」三个科学相位，通过绿、蓝、橙三色视觉脉动与震动反馈，强制放慢进食节奏。</p>
+                    </article>
+
+                    <article class="card feature-card">
+                        <span class="feature-icon icon-blue">2</span>
+                        <h3>智能穿戴设备协同</h3>
+                        <p>Apple Watch 深度协同，手腕隐形震动提醒，无需紧盯手机。小米、华为、荣耀、红米等几乎所有主流手表手环也支持同逻辑震动引导，私密无感。</p>
+                    </article>
+
+                    <article class="card feature-card">
+                        <span class="feature-icon icon-orange">3</span>
+                        <h3>多维数据记录</h3>
+                        <p>记录每餐咀嚼时长与频率，通过热图观察饮食习惯变化。少一点靠意志硬撑，多一点用数据看见进步。</p>
+                    </article>
+
+                    <article class="card feature-card">
+                        <span class="feature-icon icon-ink">4</span>
+                        <h3>拍照/分享记录</h3>
+                        <p>拍下每一餐的饮食，记录下每一餐后的感受，分享生活里的美好，把时间还给吃饭，在吃饭中享受美好。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="download-section" id="download">
+            <div class="site-shell">
+                <div class="section-head">
+                    <div>
+                        <p class="section-kicker">DOWNLOAD</p>
+                        <h2>选择您的设备，直接开始</h2>
+                    </div>
+                </div>
+
+                <div class="download-grid">
+                    <article class="card download-card">
+                        <div class="download-topline">
+                            <h3>iOS / Apple Watch</h3>
+                            <span class="tag">完整功能</span>
+                        </div>
+                        <p>在 App Store 直接搜索「慢食伴侣」下载。iPhone 端完整支持三阶段节奏引导、数据记录与 Apple Watch 深度协同。</p>
+                        <ul class="mini-list">
+                            <li>Apple Watch 手腕震动提醒</li>
+                            <li>无需一直盯着手机屏幕</li>
+                            <li>适合家庭用餐、外出聚餐和工作日午餐</li>
+                        </ul>
+                        <div class="download-actions">
+                            <a class="button button-primary" href="https://apps.apple.com/cn/app/%E6%85%A2%E9%A3%9F%E4%BC%B4%E4%BE%A3-%E7%BB%86%E5%9A%BC%E6%85%A2%E5%92%BD%E5%81%A5%E5%BA%B7%E7%AE%A1%E5%AE%B6/id6757735722">前往 App Store</a>
+                        </div>
+                    </article>
+
+                    <article class="card download-card featured" id="android-install">
+                        <div class="download-topline">
+                            <h3>安卓 / 鸿蒙 4.x</h3>
+                            <span class="tag">官网 APK 下载</span>
+                        </div>
+                        <p>安卓手机、EMUI、OPPO等设备，可直接下载 APK 包安装。完整支持节奏引导、数据记录，并支持手表/手环震动提醒。提供两种下载方式：</p>
+						<div class="download-methods" aria-label="安卓 APK 下载方式">
+                            <div class="download-method">
+                                <h4>方式一：点击按钮下载</h4>
+                                <p>适合手机浏览器和电脑访问。</p>
+                                <a class="button button-primary" id="apk-download-link" href="https://env-00jxubxpkg9s.normal.cloudstatic.cn/%E6%85%A2%E9%A3%9F%E4%BC%B4%E4%BE%A3.apk" download="慢食伴侣.apk">下载 APK 安装包</a>
+                            </div>
+                            <div class="download-method">
+                                <h4>方式二：长按二维码下载</h4>
+                                <p>安卓用户可扫码/长按识别二维码下载。</p>
+                                <div class="qr-stack">
+                                    <a class="qr-image-link" id="apk-qr-link" href="https://env-00jxubxpkg9s.normal.cloudstatic.cn/%E6%85%A2%E9%A3%9F%E4%BC%B4%E4%BE%A3.apk" download="慢食伴侣.apk" aria-label="安卓 APK 下载二维码">
+                                        <img class="qr-image" id="apk-qr-image" alt="慢食伴侣安卓 APK 下载二维码">
+                                    </a>
+                                    <p class="qr-caption">识别后将直接跳转至 APK 下载链接</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <details open>
+                        	<summary>安卓 APK 安装步骤</summary>
+                        	<ol class="steps">
+                        		<li>点击「下载 APK 安装包」，将文件下载到手机。</li>
+                        		<li>安装时如提示“未知来源应用”或“风险安装”，请选择允许安装。</li>
+                        		<li>安装完成后打开「慢食伴侣」，按页面提示开启震动提醒与数据记录。</li>
+                        	</ol>
+                        </details>
+                         
+                        <p class="safety">安全提示：APK 包来自慢食伴侣官网，无病毒、无广告。若系统要求确认来源，请核对页面域名为 chewing.top 后再安装。</p>
+                    </article>
+
+                    <article class="card download-card wide">
+                        <div class="download-topline">
+                            <h3>NEXT 鸿蒙 / HarmonyOS 5 及以上</h3>
+                            <span class="tag">原生鸿蒙路径</span>
+                        </div>
+                        <p>已升级到 HarmonyOS NEXT、HarmonyOS 5 或 HarmonyOS 6 的华为设备，请通过华为应用市场搜索「慢食伴侣」安装原生鸿蒙版（即将上线，敬请期待！）</p>
+                        <div class="platform-table" aria-label="NEXT 鸿蒙兼容说明">
+                            <div class="platform-cell">
+                                <strong>Mate 系列</strong>
+                                <span>Mate 60 / 70 / 80 系列，以及官方发布尝鲜/公测名单中的 Mate X 折叠屏机型。</span>
+                            </div>
+                            <div class="platform-cell">
+                                <strong>Pura / nova 系列</strong>
+                                <span>Pura 70 / 80 系列、nova 12 / 13 / 14 / 15 系列，以华为官方尝鲜/公测列表为准。</span>
+                            </div>
+                            <div class="platform-cell">
+                                <strong>折叠屏系列</strong>
+                                <span>Mate X5、Mate X6、Mate XT、Pocket 2、nova Flip 等折叠屏设备，请以官方发布的支持名单为准。</span>
+                            </div>
+                            <div class="platform-cell">
+                                <strong>安装方式</strong>
+                                <span>打开华为应用市场，搜索「慢食伴侣」，或点击下方「原生鸿蒙版入口」直达安装页面。</span>
+                            </div>
+                        </div>
+                        <div class="download-actions">
+                            <a class="button button-secondary" href="__HARMONY_APPGALLERY_URL__">即将上线</a>
+                        </div>
+                        <p class="compat-note">提示：支持机型会随华为官方尝鲜、公测与正式版名单动态调整，请以设备当前系统版本和华为官方发布列表为最终准入依据。HarmonyOS 4.3 及以下通常走 APK；HarmonyOS 5 及以上请走原生鸿蒙版。</p>
+                    </article>
+
+                    <article class="card download-card wide">
+                        <div class="download-topline">
+                            <h3>微信小程序</h3>
+                            <span class="tag">轻量体验</span>
+                        </div>
+                        <p>无需安装 App，微信内搜索「慢食伴侣」即可访问。无后台与手表协同功能，可以完整体验节奏音乐、节奏震动，跟随音乐和震动来咀嚼</p>
+                        <div class="qr-block">
+                            <div class="qr-stack">
+                                <div class="qr-image-link" aria-hidden="true">
+                                    <img class="qr-image" src="images/wx.png" alt="慢食伴侣微信小程序码">
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="mini-list">
+									<li>在浏览器上长按直接打开</li>
+                                    <li>保存为图片使用微信扫一扫打开。</li>
+                                    <li>适合快速体验基础慢食节奏。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="site-shell">
+                <div class="section-head">
+                    <div>
+                        <p class="section-kicker">FAQ</p>
+                        <h2>常见问题</h2>
+                    </div>
+                    
+                </div>
+
+                <div class="faq-list">
+                    <article class="card faq-item">
+                        <h3>它为什么是一款细嚼慢咽健康管家？</h3>
+                        <p>慢食伴侣是您的细嚼慢咽健康管家，核心目标是帮助用户养成一口30下的细嚼慢咽习惯，改善进食节奏。它不仅适合需要控制体重或减重的用户，也适合关注肠胃健康、纠正暴饮暴食行为、培养正念饮食习惯的人群。进食过快时，肠胃和大脑往往来不及同步接收饱腹与消化信号，容易带来无意识加餐、胃部负担加重和用餐节奏失衡。慢食伴侣通过稳定的节奏提醒帮助用户放慢每一口，减少狼吞虎咽，减轻肠胃负担，逐步建立更从容、更健康的饮食节奏。</p>
+                    </article>
+
+                    <article class="card faq-item">
+                        <h3>安卓 / 鸿蒙如何安装？哪些华为手机不能用 APK？</h3>
+                        <p>能安装 APK 的不是某个固定品牌或型号，而是取决于系统类型：安卓、EMUI、HarmonyOS 4.3 及以下设备可使用官网 APK；已升级 HarmonyOS NEXT、HarmonyOS 5 或 HarmonyOS 6 的设备请使用华为应用市场原生鸿蒙版，不建议下载 APK。常见原生鸿蒙系列包括 Mate 80 / 70 / 60、Mate X7 / X6 / XTs / X5 / XT、Pura 80 / 70 / X、nova 15 / 14 / 13 / 12、Pocket 2 等，最终以手机「设置 - 关于手机」显示的系统版本和华为官方支持列表为准。</p>
+                    </article>
+
+                    <article class="card faq-item">
+                        <h3>APK 安装时提示“未知来源应用/风险安装”怎么办？</h3>
+                        <p>这是安卓系统对官网安装包的常规安全提示。请确认下载页面来自 chewing.top，文件名与版本号无异常，然后按系统提示允许本次安装。慢食伴侣官网 APK 无病毒、无广告，安装完成后即可正常使用。</p>
+                    </article>
+
+                    <article class="card faq-item">
+                        <h3>微信小程序和 App 有什么区别？</h3>
+                        <p>微信小程序更轻，适合快速体验基础节奏引导；App 版本支持更完整的数据记录、后台用餐提醒，以及 Apple Watch 或主流安卓手表/手环震动协同。如果您希望长期养成习惯，建议优先安装 App。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-shell footer">
+        <div><strong>© 2026 慢食伴侣 (一口30下)</strong></div>
+        <div>问题反馈渠道：yangjieyes@yeah.net</div>
+    </footer>
+    <script>
+        (function () {
+            var apkUrl = 'https://env-00jxubxpkg9s.normal.cloudstatic.cn/%E6%85%A2%E9%A3%9F%E4%BC%B4%E4%BE%A3.apk';
+            var qrImage = document.getElementById('apk-qr-image');
+            var qrLink = document.getElementById('apk-qr-link');
+
+            if (!qrImage || !qrLink) {
+                return;
+            }
+
+            qrLink.setAttribute('href', apkUrl);
+            qrImage.src = 'https://api.qrserver.com/v1/create-qr-code/?size=264x264&margin=8&data=' + encodeURIComponent(apkUrl);
+        })();
+    </script>
 </body>
 
 </html>
