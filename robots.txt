@@ -23,4 +23,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: http://www.chewing.top/sitemap.xml
+Sitemap: https://www.chewing.top/sitemap.xml
