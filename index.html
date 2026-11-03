@@ -855,6 +855,28 @@
             line-height: 1.65;
         }
 
+        .button-quiet[aria-disabled="true"] {
+            opacity: 0.65;
+            cursor: wait;
+        }
+
+        .apk-download-feedback {
+            margin-top: 12px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            line-height: 1.65;
+        }
+
+        .apk-download-feedback button {
+            padding: 0;
+            border: 0;
+            background: none;
+            color: var(--brand-deep);
+            font: inherit;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
         .download-tip svg {
             flex: 0 0 auto;
             margin-top: 2px;
@@ -2318,7 +2340,11 @@
                                 <p>现在可以直接通过手机自带应用商店安装。搜索“慢食伴侣”，认准绿色图标，即可获得更省心的安装与版本更新体验。</p>
                                 <div class="download-actions">
                                     <a class="button button-primary" href="#store-search-help" data-store-link data-store-name="手机自带应用商店" data-store-scheme="market://details?id=com.chewing.top">打开手机应用商店</a>
-                                    <a class="button-quiet" href="downloads/chewing-3.0.1.apk" download="慢食伴侣_3.0.1.apk">官网 APK 3.0.1（备用）</a>
+                                    <a class="button-quiet" id="apk-download" href="https://www.chewing.top/downloads/chewing-3.0.1.apk" download="慢食伴侣_3.0.1.apk" aria-describedby="apk-download-status">官网 APK 3.0.1（备用）</a>
+                                </div>
+                                <div class="apk-download-feedback" id="apk-download-feedback" hidden>
+                                    <span id="apk-download-status" role="status" aria-live="polite"></span>
+                                    <button type="button" id="apk-download-retry">仍未开始？重新下载</button>
                                 </div>
                                 <div class="download-tip">
                                     <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -2565,6 +2591,35 @@
     </footer>
 
     <script>
+        (function () {
+            var link = document.getElementById('apk-download');
+            var feedback = document.getElementById('apk-download-feedback');
+            var status = document.getElementById('apk-download-status');
+            var retry = document.getElementById('apk-download-retry');
+            if (!link || !feedback || !status || !retry) return;
+
+            var requested = false;
+            link.addEventListener('click', function (event) {
+                if (requested) {
+                    event.preventDefault();
+                    return;
+                }
+                requested = true;
+                link.setAttribute('aria-disabled', 'true');
+                link.textContent = '已发起下载，请查看下载列表';
+                feedback.hidden = false;
+                status.textContent = '安装包约 48 MB，开始下载可能需要等待，请勿重复点击。请查看浏览器下载列表；确认没有下载任务后再重试。';
+                // Keep the native download: the page cannot observe its completion.
+                // Unlock only on an explicit retry, rather than a timer that can
+                // expire while a slow request is still pending.
+            });
+            retry.addEventListener('click', function () {
+                requested = false;
+                link.removeAttribute('aria-disabled');
+                link.click();
+            });
+        })();
+
         (function () {
             var form = document.getElementById('research-form');
             var submitButton = document.getElementById('research-submit');
